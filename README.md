@@ -25,7 +25,7 @@ A collection of resources on Transformer in Transportation.
 * - [ ] [1. Description](#head1)
 * - [ ] [2. Paper With Code](#head2)
   * - [ ] [Traffic Forecasting](#head-Traffic-Forecasting)
-  * - [ ] [Traffic Control](#head-Traffic-Controls)
+  * - [ ] [Traffic Control](#head-Traffic-Control)
   * - [ ] [Public Transit Management](#head-Public-Transit-Management)
   * - [ ] [Analysis of Public Feedback](#head-Analysis-of-Public-Feedback)
   * - [ ] [Dissemination of Real-Time Information](#head-Dissemination-of-Real-Time-Information)
@@ -69,11 +69,55 @@ A collection of resources on Transformer in Transportation.
          * ```Proposes a multimodal transformer framework for transportation data analysis, integrating text, image, and sensor data streams.```
       * (2023) **Deep Learning Transformer Models for Building a Comprehensive and Real-time Trauma Observatory: Development and Validation Study**, Not specified. [[Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11041521/)] [[Code](Not found)]  
         * ```Develops transformer-based models for real-time trauma monitoring systems with clinical validation.```
+          
+        * (AAAI 2023) BigST: Linear Complexity Spatio-Temporal Graph Neural Network for Traffic Forecasting on Large-Scale Road Networks, Zhaoyang Meng et al. [[Paper](https://dl.acm.org/doi/pdf/10.14778/3641204.3641217)] [[Code](https://github.com/usail-hkust/BigST)]  
+          * ```The block-based spatiotemporal graph partitioning algorithm reduces the modeling complexity from O(N²) to linear. It achieves parallel computation on millions of nodes through dynamic graph partitioning. This work also introduces the first theoretical framework proving that spatiotemporal models can operate at linear complexity, and releases the open-source synthetic dataset GlobalRoad-1M, which includes complex road topologies and simulated traffic accident labels.```
+
+       * (AAAI 2023) [💬Unified Model] Trafformer: Unify Time and Space in Traffic Prediction, Yuqi Li et al. [[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/25980)] [[code](Not Found)]
+          * ```The spatiotemporal joint attention matrix fuses the spatial adjacency matrix and the temporal similarity matrix into a single attention weight.```
+
+       * (KDD 2024) STGformer: Efficient Spatiotemporal Graph Transformer for Traffic Forecasting, Weiqi Chen et al. [[Paper](https://arxiv.org/abs/2410.00385)] [[Code](https://github.com/Dreamzz5/STGformer)]  
+          * ```Kernel-approximated linear attention leverages random feature mapping to reduce the Softmax computation complexity from O(N²) to O(N).```
+       * (NeurIPS 2023) STAEformer: Spatio-Temporal Adaptive Embedding Makes Vanilla Transformer SOTA for Traffic Forecasting, Shen Fang et al. [[Paper](https://arxiv.org/abs/2308.10425)] [[Code](https://github.com/XDZhelheim/STAEformer)]  
+
+       * (AAAI 2023) PDFormer: Propagation Delay-Aware Dynamic Long-Range Transformer for Traffic Flow Prediction, Jingyuan Wang et al. [[Paper](https://arxiv.org/abs/2301.07945)] [[Code](https://github.com/BUAABIGSCity/PDFormer)]
+         * ```The semantic propagation mask generates a dynamic delay graph via k-Shape clustering to quantify traffic wave propagation time; it is the first deep learning model to incorporate the physical propagation delay of traffic flow.```
+
+       * (NeurIPS 2024) Spatial-Temporal-Decoupled Masked Pre-training for Spatiotemporal Forecasting, Yushun Jiang et al. [[Paper](https://arxiv.org/abs/2312.00516)] [[code](https://github.com/Jimmy-7664/STD-MAE)]  
+         * ``` Applies masking separately along the spatial and temporal dimensions. This allows the model to independently capture long-range spatial dependencies and temporal heterogeneity, effectively mitigating the 'spatiotemporal illusion' caused by short input windows in traditional models, and thereby generally enhancing the performance of downstream spatiotemporal predictors.```
+
+       * (Neuromputing 2022) Meta Graph Transformer: A Novel Framework for Spatial–Temporal Traffic Prediction, Jingyuan Wang et al. [[Paper](https://www.sciencedirect.com/science/article/pii/S0925231221018725?via%3Dihub)] [[Code](https://github.com/lonicera-yx/MGT)] 
+         * ```The meta-graph generator dynamically constructs spatiotemporal dependencies based on node meta-features (such as POI density and road hierarchy).```
+
+       * (ICDE 2023) Self-Supervised Spatial-Temporal Bottleneck Attentive Network for Efficient Long-term Traffic Forecasting, 贡乐天 et al.[[paper](https://ieeexplore.ieee.org/document/10184658)][[code](https://github.com/guoshnBJTU/SSTBAN)] 
+         * ```A self-supervised spatiotemporal bottleneck attention network is proposed that integrates self-supervised learning with a lightweight attention mechanism, significantly enhancing both the accuracy and efficiency of long-term traffic forecasting.```
+
+       * (2020 《Transactions in GIS》) Traffic Transformer: Capturing the Continuity and Periodicity of Time Series for Traffic Forecasting, Yuxuan Liang et al. [[Paper](https://onlinelibrary.wiley.com/doi/full/10.1111/tgis.12644)]  [[code](Not Found)]
+        * ```The Lipschitz constraint module forces the change rate between predictions of adjacent time steps to be no greater than the maximum fluctuation in historical data; this work is the first to introduce differential equation stability theory into spatiotemporal modeling.```
+
+       * (SIGSPATIAL 2021) DetectorNet: Transformer-enhanced Spatial Temporal Graph Neural Network for Traffic Prediction, Zhang et al. [[Paper](https://arxiv.org/abs/2111.00869)] [[Code](Not Found)] 
+         * ```The multi-view spatiotemporal modeling approach combines transformer-based multi-perspective temporal attention (covering short, medium, and long cycles) with dynamic graph convolution.```
+        
+       * (KDD 2024) [💬LLM] UrbanGPT: Spatio-Temporal Large Language Models, Cheng Long et al. [[Paper](https://arxiv.org/abs/2403.00813)] [[code](https://github.com/HKUDS/UrbanGPT)]  
+        * ```The spatiotemporal vocabulary encodes road network topology into a token sequence to support bidirectional conversion between GPS coordinates and semantic locations; it is the first multimodal large model in the traffic domain that supports prediction tasks controlled via text instructions.```
+
+       * (2023 《Expert Systems with Applications》) Spatio-temporal Graph Mixformer for Traffic Forecasting, Lablack 和 Shen. [[paper](https://www.sciencedirect.com/science/article/pii/S0957417423007832?via%3Dihub)][[code](https://github.com/Mouradost/STGM)]
+         * ```Building on the Transformer, the model introduces temporal dilated convolution, multi-head attention, and an estimator module to effectively capture dynamic spatiotemporal dependencies in traffic data. It fuses multi-perspective information through a hybrid module, achieving both efficient and accurate traffic flow forecasting.```
+
+       * (2025) T-Graphormer: Using Transformers for Spatiotemporal Forecasting, Bai and Liu. [[Paper](https://www.arxiv.org/abs/2501.13274)] [[代码](https://github.com/rdh1115/T-Graphormer)]
+         * ```Extends Graphormer into the temporal dimension. Through a global self-attention mechanism, every node in the graph simultaneously captures dependencies in both space and time, reducing reliance on predefined spatiotemporal inductive biases. ```
+
 
    * <span id="head-Traffic-Control"> **Traffic Control** </span> **[       «🎯Back To Top»       ](#)**
        ```LLMs can act as intelligent traffic controllers, optimizing traffic flow at intersections by analyzing real-time data and providing context-aware decisions to drivers, infrastructure, and autonomous vehicles.```
       * (2025) **Large Language Models (LLMs) as Traffic Control Systems at Urban Intersections: A New Paradigm**, Not specified. [[Paper](https://www.mdpi.com/2624-8921/7/1/11)] [[Code](Not found)]  
         * ```Pioneering study implementing LLMs for real-time urban intersection management through multimodal data processing.```
+     
+     * (IJCAI 2024)  X-Light: Cross-City Traffic Signal Control Using Transformer on Transformer as Meta Multi-Agent Reinforcement Learner, Jiang et al. [[Paper](https://arxiv.org/abs/2404.12090)] [[code](https://github.com/jianghaoyuan1994/X-Light)]
+          * ``Propose a Transformer-on-Transformer architecture: the lower-level Transformer aggregates multi-dimensional MDP information (state/action/reward) from intersections, while the upper-level Transformer learns cross-city meta-decision patterns.```
+
+   * (KDD 2023) TransformerLight: A Novel Sequence Modeling Based Traffic Signaling Mechanism via Gated Transformer, Wu et al. [[Paper](https://dl.acm.org/doi/10.1145/3580305.3599530)] [[code](https://github.com/Smart-Trafficlab/TransformerLight)]
+          * ```Directly generate optimal signal phases through gated Transformer blocks, thereby bypassing the dynamic programming and value function estimation of traditional reinforcement learning, and achieving state-of-the-art performance on real road networks.```
 
    * <span id="head-Public-Transit-Management"> **Public Transit Management** </span> **[       «🎯Back To Top»       ](#)**
        ```LLMs can enhance public transit systems by optimizing route planning, reducing wait times, and providing personalized travel assistance to passengers.```
